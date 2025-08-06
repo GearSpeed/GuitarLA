@@ -16,7 +16,11 @@ function App() {
 
           <div className="row mt-5">
               {data.map((guitar) => (
-                  <Guitar />
+                  <Guitar
+                    key={guitar.id}
+                    guitar={guitar}
+
+                  />
                 )
               )}
           </div>
